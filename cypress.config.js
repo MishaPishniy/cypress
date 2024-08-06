@@ -15,10 +15,6 @@ module.exports = defineConfig({
       runMode: 2,
       openMode: 0
     },
-    env: {
-      username: 'guest',
-      password: 'welcome2qauto'
-    },
-    supportFile: 'cypress/support/index.js' // Додайте цей рядок тут
+    supportFile: 'cypress/support/index.js'
   },
 });
