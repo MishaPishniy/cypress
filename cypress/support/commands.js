@@ -4,6 +4,3 @@ Cypress.Commands.add('typePassword', {prevSubject : 'element' } , (subject , pas
     cy.wrap(subject).type(password, {log: false});
 });
 
-
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
-addMatchImageSnapshotCommand();
