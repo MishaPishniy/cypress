@@ -19,10 +19,12 @@ describe("Footer Social Links", () => {
         });
   
         // Кликаем на иконку
-        cy.get('a[href="https://t.me/ithillel_kyiv"]').click();
+        cy.get('a[href="https://t.me/ithillel_kyiv"]').matchImageSnapshot().click();
   
         // Проверяем, что window.open был вызван с правильным URL
-        cy.get('@windowOpen').should('be.calledWith', href);
+        cy.get('@windowOpen').should('be.calledWith', href).then(() => {
+          console.log(' URL:', href);
+        });
       });
     });
   });

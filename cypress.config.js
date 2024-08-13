@@ -10,6 +10,14 @@ module.exports = defineConfig({
     viewportHeight: 720,
     video: true,
     videosFolder: 'videos',
+    reporter: "mochawesome",
+    reporterOptions: {
+      reportDir: "cypress/reports/mochawesome",
+      overwrite: false,
+      html: true,
+      json: true,
+      charts: true,
+    },
     screenshotsFolder: 'screenshots',
     retries: {
       runMode: 2,
