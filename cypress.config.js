@@ -5,6 +5,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    chromeWebSecurity: false, // Отключить функции безопасности Chrome
+    experimentalSessionAndOrigin: true, // Включить поддержку сессий и кросс-доменных запросов
+    defaultCommandTimeout: 10000, // Время ожидания команд
     baseUrl: 'https://qauto.forstudy.space', 
     viewportWidth: 1280,
     viewportHeight: 720,
